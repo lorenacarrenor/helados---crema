@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html>
     <head>
- 
         <style>
             body{
                 font-family: Arial, Helvetica, sans-serif; /*Fuentes clasicas*/
                 font-size:  12px; /* tamaño de letra */
             }
-            input{
-                background-color: white; /*Fondo blanco*/
+
+            input[type="text"],input[type="email"],select {
+                background: white; /*Fondo blanco*/
                 height: 30px; /* Altura */
                 border-radius: 6px; /* Borde redondeado*/
-                border: 1px solid #777; /* borde gris*/
+                border: 1px solid #777; /* Borde gris*/
                 margin-bottom: 15px; /* Margen inferior*/  
             }
-               
+            
             form{
                 display: flex;
                 flex-direction: column;
@@ -32,21 +32,21 @@
             <label for="apellido">Apellidos</label>
             <input type="text" id="apellido" placeholder="Ingrese sus Apellidos" />
 
-            <label email="correo">ingrese su correo:</label>
+            <label email="correo">Ingrese su correo:</label>
             <input type="correo" id="correo" placeholder="Ingrese su correo" />
 
             <label for="servicios_helados">Seleccione servicio</label>
             <select id="servicios_helados"> 
                 <option value="1">Preparado de helados de chocolate</option>
-                <option value="2">Preparado de fresa/</option>
-                <option value="3">Preparado de Vainilla</option>
+                <option value="2">Preparado de helados de fresa</option>
+                <option value="3">Preparado de helados de vainilla</option>
             </select>
 
             <label for="mensaje">Extras para tu servicio</label>
             <textarea id="mensaje"></textarea>
             
-            <label>Pago al Contado<input type="radio" value="CONT" name="tipo_pago"></label>
-            <label>Pago con tarjeta <input type="radio" value= "TAR" name="tipo:pago"></label>
+            <label>Pago al Contado <input type="radio" value="CONT" name="tipo_pago"></label>
+            <label>Pago con tarjeta <input type="radio" value="TAR" name="tipo_pago"></label>
         </form>
     </body>
 </html>
